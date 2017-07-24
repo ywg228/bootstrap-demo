@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#mScrollspy" data-offset="70">
+<nav id="header" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><strong>ywg</strong>.top</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="navbar-tabs" class="nav navbar-nav navbar-left">
+                <li><a href="#">首页</a></li>
+                <li><a href="#slideshow">关于我</a></li>
+                <li><a href="#project-container">标签</a></li>
+                <!--下拉菜单Dropdown-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        更多
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header"><h5>Header</h5></li>
+                        <li><a href="#">Item1</a></li>
+                        <li><a href="#">Item2</a></li>
+                        <li><a href="#">Item3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Item4</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Item5</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-left">
+                <input class="form-control" type="text" placeholder="Search">
+                <button type="submit">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </form>
+
+            <a class="btn btn-primary navbar-btn btn-sm navbar-right hidden-xs" href="#">订阅</a>
+            <div class="login-register navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div id="slideshow" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#slideshow" data-slide-to="1"></li>
+            <li data-target="#slideshow" data-slide-to="2"></li>
+        </ol>
+        <!-- Content -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="img-responsive"
+                     src="images/1.jpg"
+                     alt="">
+                <div class="carousel-caption">
+                    <h3>标题1</h3>
+                    <p>描述1</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/2.jpg"
+                     alt="">
+                <div class="carousel-caption">
+                    <h3>标题2</h3>
+                    <p>描述2</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive"
+                     src="images/3.jpg"
+                     alt="">
+                <div class="carousel-caption">
+                    <h3>标题3</h3>
+                    <p>描述3</p>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#slideshow" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#slideshow" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+    <div class="text-center" style="">
+        <div class="btn-group">
+            <div class="btn btn-default prev-slide">
+                <span class="glyphicon glyphicon-backward"></span>
+            </div>
+            <div class="btn btn-default play-stop">
+                <span class="glyphicon glyphicon-play"></span>
+            </div>
+            <div class="btn btn-default next-slide">
+                <span class="glyphicon glyphicon-forward"></span>
+            </div>
+            <div class="btn btn-default first-slide">
+                第一页
+            </div>
+        </div>
+    </div>
+    <!--  <div id="project-container" class="row">
+          <div class="project-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href=""><img class="img-responsive" src="images/10-3.jpg" alt=""></a>
+          </div>
+          <div class="project-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href=""><img class="img-responsive" src="images/11.jpg" alt=""></a>
+          </div>
+          <div class="project-item  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href=""><img class="img-responsive" src="images/13.jpg" alt=""></a>
+          </div>
+          <div class="project-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href=""><img class="img-responsive" src="images/14.jpg" alt=""></a>
+          </div>
+          <div class="project-item  col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href=""><img class="img-responsive" src="images/15.jpg" alt=""></a>
+          </div>
+          <div class="project-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href=""><img class="img-responsive" src="images/4.jpg" alt=""></a>
+          </div>
+          <div class="project-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href=""><img class="img-responsive" src="images/5_.jpg" alt=""></a>
+          </div>
+          <div class="project-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href=""><img class="img-responsive" src="images/8_.jpg" alt=""></a>
+          </div>
+          <div class="project-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href=""><img class="img-responsive" src="images/9-1.jpg" alt=""></a>
+          </div>
+      </div>-->
+</div>
+<div id="mTabs">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab">Bootstrap</a></li>
+        <li><a href="#tab2" data-toggle="tab">HTML5</a></li>
+        <li><a href="#tab3" data-toggle="tab">CSS3</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="tab1">
+            Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷
+            Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷
+            Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷
+        </div>
+        <div class="tab-pane fade" id="tab2">
+            HTML5是HTML最新的修订版本，2014年10月由万维网联盟（W3C）完成标准制定。
+            HTML5的设计目的是为了在移动设备上支持多媒体。
+            HTML5 简单易学。
+            HTML5是HTML最新的修订版本，2014年10月由万维网联盟（W3C）完成标准制定。
+            HTML5的设计目的是为了在移动设备上支持多媒体。
+            HTML5 简单易学。
+        </div>
+        <div class="tab-pane fade" id="tab3">
+            CSS即层叠样式表（Cascading StyleSheet）。
+            在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。CSS3是CSS技术的升级版本，CSS3语言开发是朝着模块化发展的。
+        </div>
+    </div>
+</div>
+
+<!--工具提示Tooltip-->
+<div id="tooltip" class="text-center">
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="默认的提示">默认的提示</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="顶部的提示">顶部的提示
+    </button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="右边的提示">右边的提示
+    </button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="底部的提示">
+        底部的提示
+    </button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="左边的提示">左边的提示
+    </button>
+</div>
+
+<!--弹出框Popover依赖Tooltip-->
+<div id="popover" class="text-center">
+    <button type="button" class="btn btn-default" data-toggle="popover" title="默认的提示标题"
+            data-content="默认的提示内容">默认的提示
+    </button>
+    <button type="button" class="btn btn-default" data-toggle="popover" data-placement="top"
+            title="顶部的提示标题" data-content="顶部的提示内容">顶部的提示
+    </button>
+    <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right"
+            title="右边的提示标题" data-content="右边的提示内容">右边的提示
+    </button>
+    <button type="button" class="btn btn-default" data-toggle="popover"
+            data-placement="bottom" title="底部的提示标题" data-content="底部的提示内容">底部的提示
+    </button>
+    <button type="button" class="btn btn-default" data-toggle="popover" data-placement="left"
+            title="左边的提示标题" data-content="左边的提示内容">左边的提示
+    </button>
+</div>
+
+<!--警告框Alert-->
+<div id="mAlert">
+    <div id="#alert-1" class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>成功了！</strong>结果是正确的。
+    </div>
+    <div id="#alert-2" class="alert alert-info fade in">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>你好！</strong> 这条信息需要你的注意，但不是特别重要的。
+    </div>
+
+    <div id="#alert-3" class="alert alert-warning fade in">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>警告！</strong>您的网络连接有问题。
+    </div>
+
+    <div id="#alert-4" class="alert alert-danger fade in">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>警告！</strong>您的网络连接有问题。
+    </div>
+</div>
+
+<!--按钮Buttons-->
+<div id="mButtons" class="text-center">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+</div>
+<!--折叠Collapse-->
+<div id="accordion" class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapse-1">
+                    show
+                </a>
+            </h4>
+        </div>
+        <div id="collapse-1" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷
+                Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷
+                Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapse-2">
+                    hide
+                </a>
+            </h4>
+        </div>
+        <div id="collapse-2" class="panel-collapse collapse in">
+            <div class="panel-body">
+                HTML5是HTML最新的修订版本，2014年10月由万维网联盟（W3C）完成标准制定。
+                HTML5的设计目的是为了在移动设备上支持多媒体。
+                HTML5 简单易学。
+                HTML5是HTML最新的修订版本，2014年10月由万维网联盟（W3C）完成标准制定。
+                HTML5的设计目的是为了在移动设备上支持多媒体。
+                HTML5 简单易学。
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapse-3">
+                    toggle
+                </a>
+            </h4>
+        </div>
+        <div id="collapse-3" class="panel-collapse collapse in">
+            <div class="panel-body">
+                CSS即层叠样式表（Cascading StyleSheet）。
+                在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。CSS3是CSS技术的升级版本，CSS3语言开发是朝着模块化发展的。
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-warning">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapse-4">
+                    options
+                </a>
+            </h4>
+        </div>
+        <div id="collapse-4" class="panel-collapse collapse in">
+            <div class="panel-body">
+                CSS即层叠样式表（Cascading StyleSheet）。
+                在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。CSS3是CSS技术的升级版本，CSS3语言开发是朝着模块化发展的。
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="container-fluid masonry-wrapper">
+    <div id="project-container" class="masonry">
+        <a href="" class="project-item masonry-brick">
+            <img class="img-responsive" src="images/10-3.jpg" alt="">
+            <div class="hover-mask">
+                <h2 class="project-title">标题</h2>
+                <p>描述</p>
+            </div>
+        </a>
+        <a href="" class="project-item masonry-brick">
+            <img class="img-responsive" src="images/11.jpg" alt="">
+            <div class="hover-mask">
+                <h2 class="project-title">标题</h2>
+                <p>描述</p>
+            </div>
+        </a>
+        <a href="" class="project-item masonry-brick">
+            <img class="img-responsive" src="images/13.jpg" alt="">
+            <div class="hover-mask">
+                <h2 class="project-title">标题</h2>
+                <p>描述</p>
+            </div>
+        </a>
+
+        <a href="" class="project-item masonry-brick">
+            <img class="img-responsive" src="images/14.jpg" alt="">
+            <div class="hover-mask">
+                <h2 class="project-title">标题</h2>
+                <p>描述</p>
+            </div>
+        </a>
+
+        <a href="" class="project-item masonry-brick">
+            <img class="img-responsive" src="images/15.jpg" alt="">
+            <div class="hover-mask">
+                <h2 class="project-title">标题</h2>
+                <p>描述</p>
+            </div>
+        </a>
+
+        <a href="" class="project-item masonry-brick">
+            <img class="img-responsive" src="images/4.jpg" alt="">
+            <div class="hover-mask">
+                <h2 class="project-title">标题</h2>
+                <p>描述</p>
+            </div>
+        </a>
+
+        <a href="" class="project-item masonry-brick">
+            <img class="img-responsive" src="images/5_.jpg" alt="">
+            <div class="hover-mask">
+                <h2 class="project-title">标题</h2>
+                <p>描述</p>
+            </div>
+        </a>
+
+        <a href="" class="project-item masonry-brick">
+            <img class="img-responsive" src="images/8_.jpg" alt="">
+            <div class="hover-mask">
+                <h2 class="project-title">标题</h2>
+                <p>描述</p>
+            </div>
+        </a>
+
+        <a href="" class="project-item masonry-brick">
+            <img class="img-responsive" src="images/9-1.jpg" alt="">
+            <div class="hover-mask">
+                <h2 class="project-title">标题</h2>
+                <p>描述</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<!--模态框Modal-->
+<div class="modal fade" id="login-modal" tabindex="-1" data-remote="login-form.html">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+
+<!--滚动监听Scrollspy-->
+<div id="mScrollspy" class="visible-lg">
+    <ul class="nav">
+        <li><a href="#slideshow">Carousel</a></li>
+        <li><a href="#project-container">Images</a></li>
+        <li><a href="#mTabs">Tabs</a></li>
+        <li><a href="#mAlert">Alert</a></li>
+        <li><a href="#accordion">Collapse</a></li>
+    </ul>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/masonry/4.2.0/masonry.pkgd.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>
